@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slicing</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-josefin overflow-x-hidden ">
+    <!-- header dan navigasi -->
+    <header
+      class="bg-heroBg flex justify-between items-center px-9 py-3 text-white pt-5 lg:px-[160px] fixed w-full z-50 bg-opacity-10 backdrop-blur-sm"
+    >
+      <!-- logo  -->
+      <div class="logo">
+        <h1 class="text-2xl font-semibold">LOGO</h1>
+      </div>
+      <!-- logo end -->
+      <!-- nagivasi -->
+      <nav>
+        <!-- divnya hamburger -->
+        <div class="w-7">
+          <!-- hamburger button -->
+          <button id="menuBtn" href="#" class="md:hidden">
+            <svg
+              viewBox="-0.5 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[36px]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2 12.32H22"
+                  stroke="#fff"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2 18.32H22"
+                  stroke="#fff"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M2 6.32001H22"
+                  stroke="#fff"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <!-- hamburger button end -->
+        </div>
+        <!-- divnya hamburger end -->
+        <!-- navigasi desktop -->
+        <ul class="hidden md:flex gap-8 md:text-[25px] md:font-semibold relative w-full right-0 md:static" id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul> 
+        <!-- navigasi desktop end -->
+      </nav>
+      <!-- navigasi end -->
+    </header>
+    <!-- header dan navigasi end -->
+    <!-- main -->
+    <main>
+      <!-- hero section -->
+      <section
+        class="bg-heroBg h-screen flex flex-col items-center justify-start pt-[122px] lg:flex-row lg:justify-between lg:px-[160px] lg:pt-0"
+      >
+        <!-- hero content -->
+        <div class="flex flex-col items-center justify-start lg:w-1/2">
+          <div class="container mx-auto text-center">
+            <h1
+              class="text-5xl tracking-wider leading-tight font-bold mb-4 text-white font-josefin lg:text-left lg:text-[70px]"
+            >
+              There’s a <br />better way to <br />grow
+            </h1>
+            <p
+              class="text-xl text-white font-semibold m-16 lg:text-left lg:ml-0"
+            >
+              Are you having a hard time growing your online business? Our team
+              can help.
+            </p>
+          </div>
+          <!-- hero content end -->
+          <!-- hero button -->
+          <button
+            class="mt-8 bg-white w-max self-center px-11 py-5 lg:self-start"
+          >
+            <a href="#" class="font-bold text-heroBg text-[20px]"
+              >GET STARTED</a
+            >
+          </button>
+        </div>
+        <!-- hero content end -->
+        <!-- hero img -->
+        <div class="hidden lg:block">
+          <img
+            src="./assets/undraw_visionary_technology_re_jfp7 1.svg"
+            alt="hero img"
+          />
+        </div>
+        <!-- hero img end -->
+      </section>
+      <!-- hero section end -->
+      <!-- featured section -->
+      <section
+        class="bg-heroBg h-screen flex flex-col items-center justify-start px-10 lg:px-[160px] lg:h-auto"
+      >
+        <h2 class="self-start text-white font-semibold text-[20px]">
+          FEATURED ON
+        </h2>
+        <div
+          class="bg-logoBg flex flex-col justify-between items-center mt-8 py-[100px] w-full h-3/4 font-semibold text-2xl text-white rounded-xl lg:flex-row lg:h-max lg:justify-around"
+        >
+          <div class=""><p>LOGO HERE</p></div>
+          <div class=""><p>LOGO HERE</p></div>
+          <div class=""><p>LOGO HERE</p></div>
+          <div class=""><p>LOGO HERE</p></div>
+        </div>
+      </section>
+      <!-- featured section end -->
+      <!-- about section -->
+      <section
+        class="bg-heroBg h-[90vh] flex flex-col items-center justify-start px-10 lg:pt-[260px]"
+        id="about"
+      >
+        <div class="container mx-auto text-center leading-tight text-white">
+          <h1 class="font-bold text-[40px]">
+            Discover new business strategies
+          </h1>
+          <p class="text-[20px] font-semibold mt-6">
+            Thousands of startups trust us with our effective and efficient
+            business techniques
+          </p>
+        </div>
+        <button class="mt-8 bg-white w-max self-center px-11 py-5">
+          <a href="#" class="font-bold text-heroBg text-[20px]">ABOUT US</a>
+        </button>
+      </section>
+      <!-- about section end -->
+      <!-- contact section -->
+      <section
+        class="bg-scndBg h-max flex flex-col items-center justify-start px-10 gap-10 pb-[114px]"
+        id="contact"
+      >
+        <!-- contact 1 -->
+        <div
+          class="flex flex-col items-center h-max lg:flex-row lg:justify-start lg:gap-[100px]"
+        >
+          <div
+            class="relative top-[-70px] w-[400px] rounded-lg shadow-black shadow-md lg:w-[478px]"
+          >
+            <img
+              src="./assets/f25d048356d7dbd838349e0f2c74119a43e168ae.jpg"
+              alt=""
+              class="object-cover w-full rounded-xl"
+            />
+          </div>
+          <div class="flex flex-col items-center lg:w-1/2">
+            <div class="container mx-auto text-center leading-tight text-white">
+              <h1 class="font-bold text-[40px] lg:text-left lg:text-[70px]">
+                We take our work seriously
+              </h1>
+              <p class="text-[20px] font-semibold mt-6 lg:text-left">
+                Wasting time is not in our vocabulary. You can expect to get
+                effective results in no time.
+              </p>
+            </div>
+            <button
+              class="mt-8 bg-white w-max self-center px-11 py-5 lg:self-start"
+            >
+              <a href="#" class="font-bold text-heroBg text-[20px]"
+                >CONTACT US</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- contact 1 end -->
+        <!-- contact 2 -->
+        <div class="flex flex-col items-center mt-[134px] h-max lg:flex-row-reverse lg:gap-[100px]">
+          <div class="w-[400px] rounded-lg shadow-black shadow-sm lg:w-[570px]">
+            <img
+              src="./assets/611dfbbec15dc798e1d8dc122906d79231fad084.jpg"
+              alt=""
+              class="object-cover w-full rounded-xl"
+            />
+          </div>
+          <div class="flex justify-center flex-col lg:w-1/2">
+            <div
+              class="container mx-auto text-center leading-tight text-white mt-8"
+            >
+              <h1 class="font-bold text-[40px] lg:text-[70px] lg:text-left">
+                Grow your business fast
+              </h1>
+              <p class="text-[20px] font-semibold mt-6 lg:text-left">
+                We understand how hard it is to grow a business. That’s why
+                we’re here to do it for you.
+              </p>
+            </div>
+            <button class="mt-8 bg-white w-max self-center px-11 py-5 lg:self-start">
+              <a href="#" class="font-bold text-heroBg text-[20px]"
+                >CONTACT US</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- contact 2 end -->
+      </section>
+      <!-- contact section end -->
+      <!-- testimonials -->
+      <section
+        class="bg-heroBg h-auto flex flex-col items-center justify-start px-10 gap-[108px] pb-[114px] lg:px-[160px] lg:pt-[100px] lg:pb-[250px]"
+      >
+        <div
+          class="container mx-auto text-center leading-none text-white gap-7 flex flex-col pt-[110px]"
+        >
+          <h1 class="font-bold text-[20px]">TESTIMONIALS</h1>
+          <h2 class="font-bold text-[40px]">Read what others say about us</h2>
+        </div>
+        <!-- testimonials content -->
+        <div
+          class="container mx-auto text-center text-white flex gap-[126px] flex-col lg:flex-row lg:gap-[50px]"
+        >
+          <!-- testimonials 1 -->
+          <div class="bg-cardBg flex items-center p-10 flex-col">
+            <div class="w-[123px] h-[123px] rounded-full relative">
+              <img
+                src="./assets/asset-2.png"
+                alt=""
+                class="object-cover w-full rounded-full absolute top-[-90px]"
+              />
+            </div>
+            <div class="mt-[-50px]">
+              <h1 class="uppercase text-[20px] font-bold">Ron Williams</h1>
+              <p class="text-[20px] font-semibold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a
+                leo lacus. Sed ac libero nibh. Etiam porttitor eros nec nunc
+                aliquet, a sollicitudin ipsum hendrerit.
+              </p>
+            </div>
+          </div>
+          <!-- testimonial 2 -->
+          <div class="bg-cardBg flex items-center p-10 flex-col">
+            <div class="w-[123px] h-[123px] rounded-full relative">
+              <img
+                src="./assets/asset-2.png"
+                alt=""
+                class="object-cover w-full rounded-full absolute top-[-90px]"
+              />
+            </div>
+            <div class="mt-[-50px]">
+              <h1 class="uppercase text-[20px] font-bold">anna phils</h1>
+              <p class="text-[20px] font-semibold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a
+                leo lacus. Sed ac libero nibh. Etiam porttitor eros nec nunc
+                aliquet, a sollicitudin ipsum hendrerit.
+              </p>
+            </div>
+          </div>
+          <!-- testimonial 3 -->
+          <div class="bg-cardBg flex items-center p-10 flex-col">
+            <div class="w-[123px] h-[123px] rounded-full relative">
+              <img
+                src="./assets/asset-2.png"
+                alt=""
+                class="object-cover w-full rounded-full absolute top-[-90px]"
+              />
+            </div>
+            <div class="mt-[-50px]">
+              <h1 class="uppercase text-[20px] font-bold">mary madison</h1>
+              <p class="text-[20px] font-semibold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a
+                leo lacus. Sed ac libero nibh. Etiam porttitor eros nec nunc
+                aliquet, a sollicitudin ipsum hendrerit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials end -->
+      <!-- the beginning -->
+      <section
+        class="bg-scndBg h-auto flex flex-col items-center justify-start px-10 gap-[108px] pb-[114px]"
+      >
+        <div
+          class="mx-auto text-center leading-none text-white gap-7 flex flex-col pt-[110px] lg:items-center"
+        >
+          <h1 class="font-bold text-[20px]">THE BEGINNING</h1>
+          <h2 class="font-bold text-[40px] lg:text-[60px] lg:w-1/2">
+            Get ready as your journey to success starts here
+          </h2>
+        </div>
+        <button class="mt-8 bg-white w-max self-center px-11 py-5">
+          <a href="#" class="font-bold text-heroBg text-[20px]">GET STARTED</a>
+        </button>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- footer -->
+    <footer class="bg-heroBg text-white">
+      <!-- footer top -->
+      <div
+        class="container flex gap-y-[80px] flex-col text-left pt-[100px] ml-[34px] w-max pb-[200px] lg:flex-row lg:gap-x-[100px] lg:justify-center lg:w-full"
+      >
+        <div>
+          <h1 class="uppercase text-[25px] font-bold">logo</h1>
+        </div>
+        <!-- navigasi footer -->
+        <div>
+          <h1 class="text-[25px] mb-[41px]">Navigation</h1>
+
+          <ul class="text-[20px] lg:flex lg:flex-col lg:gap-3">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <!-- navigasi footer end -->
+        <!-- contact footer -->
+        <div>
+          <h1 class="text-[25px] mb-[41px]">Contact</h1>
+          <ul class="text-[20px] lg:flex lg:flex-col lg:gap-3">
+            <li>Facebook</li>
+            <li>instagram</li>
+            <li>Linkedin</li>
+          </ul>
+        </div>
+        <!-- contact footer end -->
+        <!-- adress footer -->
+        <div>
+          <h1 class="text-[25px] mb-[41px]">Adress</h1>
+          <ul class="text-[20px] lg:flex lg:flex-col lg:gap-3">
+            <li>3807 Geneva Street</li>
+            <li>Brooklyn, New York</li>
+          </ul>
+        </div>
+        <!-- adress footer end -->
+        <!-- newsletter footer -->
+        <div>
+          <h1 class="text-[25px] mb-[20px] lg:mb-[41px]">Newsletter</h1>
+          <label
+            for="Email"
+            class="bg-emailBg pl-[15px] pr-0 rounded-lg flex justify-center shadow-stone-800 drop-shadow-md"
+          >
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Email Address"
+              class="placeholder:text-white bg-emailBg"
+            />
+            <button
+              class="bg-white text-heroBg px-4 py-2 text-2xl rounded-md font-bold"
+            >
+              >
+            </button>
+          </label>
+        </div>
+      </div>
+      <!-- footer top end -->
+      <!-- footer bottom -->
+      <div class="bg-scndBg py-4">
+        <p class="text-center text-[16px]">
+          Copyright © 2023 Logo. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menu = document.getElementById("menu");
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
